@@ -1,6 +1,10 @@
 var str = process.argv[2];
 
-for(i=0; i<str.length; i++)
-{
-  process.stdout.write(i);
-}
+str = str.replace(/Р/g,"");
+str = str.replace(/р/g,"");
+str = str.replace(/К/g,"");
+str = str.replace(/к/g,"");
+str = str.replace(/Н/g,"");
+str = str.replace(/н/g,"");
+
+process.stdout.write(str);
