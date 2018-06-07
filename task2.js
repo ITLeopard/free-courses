@@ -13,6 +13,7 @@ for(i=0; i<str.length; i++)
 		break;
 	}
 }
+str = str_a;
 for(i=0; i<str.length; i++)
 {
 	str = str[str.length-1]+str.replace(str[str.length-1],"");
