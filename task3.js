@@ -5,5 +5,5 @@ while((a != 0) && (b != 0))
 	if (a > b) a %= b;
 	else b %= a
 
-var nod = a + b;
-process.stdout.write(String(nod));
+if(a) process.stdout.write(String(a));
+else process.stdout.write(String(b));
